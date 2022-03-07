@@ -25,9 +25,6 @@ function App() {
         polygonCreatedMessage += ` lat ${latlng.lat}`
         polygonCreatedMessage += ` lng ${latlng.lng},`
       })
-      const latlngs = event.layer._latlngs[0];
-
-      polygon = L.polygon([latlngs[0].lat, latlngs[0].lng], [latlngs[1].lat, latlngs[1].lng], [latlngs[2].lat, latlngs[2].lng], [latlngs[3].lat, latlngs[3].lng])
       polygonLatLngs.push(polygonCreatedMessage)
       setPolygonLatLngs(polygonLatLngs.slice());
     }
