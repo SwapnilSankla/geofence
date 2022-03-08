@@ -4,7 +4,7 @@ import { DrawingManager } from 'react-google-maps/lib/components/drawing/Drawing
 
 const MyMapComponent = compose(
     withProps({
-        googleMapURL: "https://maps.googleapis.com/maps/api/js?v=v3.31&key=AIzaSyBuYUAXSUR9LPuRjJ2GQkBnFO--FREAIC4&libraries=geometry,drawing,places",
+        googleMapURL: "https://maps.googleapis.com/maps/api/js?v=v3.31&key={key}&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
         containerElement: <div style={{ height: `400px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
