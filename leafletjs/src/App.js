@@ -16,7 +16,6 @@ function App() {
   })
   const [polygonLatLngs, setPolygonLatLngs] = useState([]);
   const [activeShop, setActiveShop] = useState(null);
-  let polygon = null
 
   const onCreated = (event) => {
     if (event.layerType === "polygon") {
